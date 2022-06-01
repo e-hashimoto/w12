@@ -1,0 +1,11 @@
+Cryptography and hashing algorithms in Node.js
+
+Symmetric vs asymmetric vs hashing
+
+Symmetric - one key: not ideal - can go backwards
+
+Asymmetric - two keys
+
+Hashing - produces the same-length content; lossy - process
+    is irreversible
+
