@@ -13,6 +13,10 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/create", (req, res) => {
+  res.render("create");
+})
+
 // Define a port and start listening for connections.
 const port = 4000;
 

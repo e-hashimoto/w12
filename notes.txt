@@ -95,4 +95,13 @@ ReST = Representational State Transfer
         ReST vs RPC
 
             RESTful APIs are mroe popular; Express is more conducive to following
-                RESTful convetions 
+                RESTful convetions
+
+CORS
+
+    Cross-Origin Resource Sharing: means being able to access resources that are located at an origin
+        different than the origin of the application that's making the request.
+
+    By default, browsers prevent cross-origin requests from happening for security reasons.
+
+    
