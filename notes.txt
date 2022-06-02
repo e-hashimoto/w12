@@ -9,3 +9,90 @@ Asymmetric - two keys
 Hashing - produces the same-length content; lossy - process
     is irreversible
 
+__________________________________________________________________________
+
+RESTFUL APIs
+
+ReST = Representational State Transfer
+
+    - Rules of ReST
+
+        - architecture style for designing networked applications; set of rules
+            and constraints
+
+            Six constraints but focusing on 3:
+
+                1) Decoupled client-server: The client and server should be
+                    decopuled so that they can evolve separately w/o any
+                    dependence on one another.
+
+                2) Stateless: means that there is no necessary session between
+                    the client and the server.
+
+                3) Uniform interface: RESTful APIs are meant to be self-describing
+                    and uniform in their definition.  Each operation is intended
+                    to be separated by a separate endpoint or URL.
+                        - usually implement the classic CRUD operations
+
+                        - Create, Read, Update, Delete
+
+    - What does a RESTful API look like?
+
+        URLS
+
+            - usually two kinds of URLs:
+
+                1) Ones that points at collections of resources
+                2) Ones that point at single resources
+
+                Ex: My tweets collection vs one specific tweets
+
+            - focus on naming schemes to be quite simple
+
+                - path ending in plural noun represents a collection of resources
+                    that the API provides for developers to interact with
+
+                - path combining a plural noun and a specific identifier represents
+                    a single resource (usually a PK)
+
+        AJAX URLs and HTTP verbs
+
+            GET/POST/DELETE for collections of resources
+
+                Get: get all of the specified resources
+
+                Post: create a new resource
+
+                Delete: delete all of the resources
+
+            GET/PUT/PATCH/DELETE for single resource URLs
+
+                Get: get details of the resource
+
+                Put: replace the resource
+
+                Patch: update the resource
+
+                Delete: delete the specified resource
+
+        HTML URLS and HTTP verbs
+
+            HTML URLs limit HTTP verbs to just GET and POST
+
+    - Designing your API
+
+        paths will dictate what resources are needed; look at the models in your application
+
+    - RESTful vs remote procedure calls (RPC)
+
+        A remote procedure call
+
+            methods on objects rather than database operations; clients make requests
+                centered around specific operations
+
+            RPC style endpoints are notorious for specifying the method in the URL
+
+        ReST vs RPC
+
+            RESTful APIs are mroe popular; Express is more conducive to following
+                RESTful convetions 
