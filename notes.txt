@@ -104,4 +104,8 @@ CORS
 
     By default, browsers prevent cross-origin requests from happening for security reasons.
 
-    
+___________________________________________________________________________________________________________
+
+FRIDAY NOTES
+
+
